@@ -21,7 +21,6 @@ public class Test3 {
             }
         }
         ArrayList<PhoneNumber> list = new ArrayList<>();
-        //得到后八位的号码数组
         for (int i = 0; i < num.length; i++) {
             int x = isGoodNumber(num[i]);
             if (x > 0) {

@@ -13,14 +13,15 @@ public class Test1 {
         // write code here
         int[] result = new int[height.length];
         for (int i = 1; i < height.length; i++) {
-            int j = i-1;
+            int j = i - 1;
             int dis = 1;
-            while(j>=0){
-                if(height[j]>height[i]){
+            while (j >= 0) {
+                if (height[j] > height[i]) {
                     result[i] = dis;
                     break;
                 }
-                j--;dis++;
+                j--;
+                dis++;
             }
         }
         return result;
